@@ -1,0 +1,25 @@
+{
+  "name": "help-export",
+  "version": "1.0.0",
+  "description": "DIV Games Studio Help Exporter",
+  "main": "index.js",
+  "bin": {
+    "div-help": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js serve",
+    "start:dev": "nodemon index.js serve",
+    "build": "mkdir -p dist && node index.js > dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "AzazelN28 <asakon28@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "iconv": "^2.3.4",
+    "markdown-it": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
